@@ -24,7 +24,7 @@ def getTreeData(dbname):
     qiu_data = pd.DataFrame(data=qiu, columns=colums)
     return qiu_data
 
-dash_app.layout = html.Div(
+app.layout = html.Div(
     [
         html.Div(id="description", className="text"),
         dcc.Location(id="my_location"),
